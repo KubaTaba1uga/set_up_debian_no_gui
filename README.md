@@ -1,20 +1,36 @@
 [![PyTest](https://github.com/KubaTaba1uga/python_script_executor/actions/workflows/pytest.yml/badge.svg?branch=master)](https://github.com/KubaTaba1uga/python_script_executor/actions/workflows/pytest.yml) 
 [![codecov](https://codecov.io/gh/KubaTaba1uga/python_script_executor/branch/master/graph/badge.svg?token=BHLC73ZGK0)](https://codecov.io/gh/KubaTaba1uga/python_script_executor)
 
+# Configuration description
+
+List of packages that app install and configure:
+
+1. iptables
+2. ssh server
+3. docker
+4. docker-compose
+5. emacs
+6. links2
+7. wget 
+8. git 
+9. xsel
+10. htop
+
+Configuration tested on:
+
+	- Debian 9
+	- Debian 10
+	- Debian 11
+
 # Requirements
 
 1. Python >=3.9
 2. Poetry
+3. sudo
 
-Python 3.9.8 installation:
+Requirements installation:
 
-	cd .prep
-	/bin/bash install_python3_9.sh
-
-Poetry installation:
-
-	python3 -m pip install poetry
-
+	/bin/bash prepare_to_start.sh
 
 # App description 
 
