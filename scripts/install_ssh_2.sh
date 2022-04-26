@@ -15,6 +15,7 @@ sudo iptables -P INPUT DROP
 
 # Allow port 22
 sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+sudo iptables -A INPUT -p tcp --sport 22 -j ACCEPT
 
 # Save iptables
 sudo iptables-save | sudo tee /etc/iptables/rules.v4 > /dev/null
